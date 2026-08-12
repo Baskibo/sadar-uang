@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- INPUT BUDGET -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Budget Per Bulan (Rp)"
+        android:textColor="#B3FFFFFF"
+        android:textSize="13sp"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="#55FFFFFF"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusBottomEnd="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/glass_card"
+            android:textColor="#FFFFFF"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- PILIHAN CEPAT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/kaca"
+                android:id="@+id/btn_1jt"
+                android:layout_weight="1"
+                android:text="Rp 1.000.000"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="5sp"
+                android:autoSizeMaxTextSize="15sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#FFFFFF"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/kaca"
+                android:id="@+id/btn_2jt"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Rp 2.000.000"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="5sp"
+                android:autoSizeMaxTextSize="15sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/kaca"
+                android:id="@+id/btn_3jt"
+                android:layout_weight="1"
+                android:text="Rp 3.000.000"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="8sp"
+                android:autoSizeMaxTextSize="15sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#FFFFFF"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/kaca"
+                android:id="@+id/btn_5jt"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Rp 5.000.000"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="5sp"
+                android:autoSizeMaxTextSize="15sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_10jt"
+            android:backgroundTint="@color/kaca"
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:text="Rp 10.000.000"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- SWITCH NOTIF -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:background="@drawable/glass_card"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Notifikasi Budget 80%"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"/>
+
+        <Switch
+            android:id="@+id/switch_notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- BUTTON SIMPAN -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_simpan_budget"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="Simpan Budget"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/poppins_semibold"
+        app:backgroundTint="#3B82F6"
+        app:cornerRadius="12dp"/>
+
+</LinearLayout>

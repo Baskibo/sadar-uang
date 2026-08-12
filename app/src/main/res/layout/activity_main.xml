@@ -1,0 +1,519 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:fitsSystemWindows="false"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+       <ImageView
+           android:id="@+id/wallpaper"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:contentDescription="@string/capybara"
+           android:src="@drawable/capybara"
+           android:scaleType="centerCrop" />
+
+       <View
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/bg_overlay"/>
+
+       <ScrollView
+           android:id="@+id/scrollView"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:fillViewport="true">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:padding="16dp">
+
+                     <LinearLayout
+                         android:id="@+id/blurHeader"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="30dp"
+                         android:background="@drawable/glass_card"
+                         android:elevation="20dp"
+                         android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:orientation="vertical"
+                                android:padding="20dp">
+                                   <TextView
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:fontFamily="@font/poppins_bold"
+                                       android:text="@string/sadar_uang"
+                                       android:textColor="@color/text_primary"
+                                       android:textSize="20sp"
+                                       android:textStyle="bold" />
+                                   <TextView android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_marginTop="2dp"
+                                       android:fontFamily="@font/poppins_regular"
+                                       android:text="@string/kelola_uang_dengan_bijak"
+                                       android:textColor="#DDFFFFFF" android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:gravity="center_vertical|end">
+                                   <View
+                                       android:layout_width="20dp"
+                                       android:layout_height="0dp"
+                                       android:layout_weight="1"/>
+                                   <ImageButton
+                                       android:id="@+id/daynight"
+                                       android:layout_width="48dp"
+                                       android:layout_height="48dp"
+                                       android:src="@drawable/night_icon"
+                                       android:scaleType="centerInside"
+                                       android:background="?attr/selectableItemBackgroundBorderless"
+                                       android:contentDescription="Mode Siang Malam" />
+                                   <View android:layout_width="5dp"
+                                       android:layout_height="0dp" />
+                                   <ImageButton
+                                       android:id="@+id/setting"
+                                       android:layout_width="48dp"
+                                       android:layout_height="48dp"
+                                       android:layout_marginRight="5dp"
+                                       android:src="@drawable/setting"
+                                       android:scaleType="centerInside"
+                                       android:background="?attr/selectableItemBackgroundBorderless"
+                                       android:contentDescription="Pengaturan" />
+                            </LinearLayout>
+                     </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginTop="16dp">
+
+              <com.google.android.material.button.MaterialButton
+                  android:id="@+id/graph_btn"
+                  android:layout_width="0dp"
+                  android:layout_height="50dp"
+                  android:layout_weight="1"
+                  android:text="@string/analytics"
+                  android:textColor="@color/button_text"
+                  android:backgroundTint="@color/button_glass"/>
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+                  <com.google.android.material.button.MaterialButton
+                      android:id="@+id/excel_btn"
+                      android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:layout_weight="1"
+                      android:text="Excel"
+                      android:layout_marginStart="8dp"
+                      android:textColor="@color/button_text"
+                      android:backgroundTint="@color/button_glass"/>
+
+              <com.google.android.material.button.MaterialButton
+                  android:id="@+id/import_btn"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:layout_weight="1"
+                  android:text="import"
+                  android:layout_marginStart="8dp"
+                  android:textColor="@color/button_text"
+                  android:backgroundTint="@color/button_glass"/>
+
+              </LinearLayout>
+
+
+
+
+       </LinearLayout>
+
+              <LinearLayout
+                  android:id="@+id/layout_analytics"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:visibility="gone"
+                  android:layout_marginTop="16dp"
+                  android:background="@drawable/glass_card"
+                  android:elevation="40dp"
+                  android:padding="16dp">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Analisis Pengeluaran"
+                         android:textColor="#FFFF"
+                         android:layout_margin="5dp"
+                         android:textSize="16sp"
+                         android:fontFamily="@font/poppins_semibold"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:gravity="center"
+                         android:fontFamily="@font/poppins_semibold"
+                         android:text="Berdasarkan Kategori"
+                         android:textColor="@color/text_secondary"
+                         android:textSize="14sp"/>
+
+                     <com.github.mikephil.charting.charts.PieChart
+                         android:id="@+id/pieChart"
+                         android:layout_width="match_parent"
+                         android:layout_height="250dp"/>
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:text="Tren Harian"
+                         android:gravity="center"
+                         android:fontFamily="@font/poppins_semibold"
+                         android:textColor="@color/text_secondary"
+                         android:textSize="14sp"
+                         android:layout_margin="5sp"/>
+
+                     <com.github.mikephil.charting.charts.BarChart
+                         android:id="@+id/barChart"
+                         android:layout_width="match_parent"
+                         android:layout_height="250dp"/>
+
+              </LinearLayout>
+
+
+              <LinearLayout
+                  android:id="@+id/blurDate"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="16dp"
+                  android:orientation="vertical"
+                  android:background="@drawable/glass_card"
+                  android:elevation="40dp">
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent"
+                         android:layout_margin="12dp"
+                         android:orientation="horizontal"
+                         android:gravity="center">
+
+                            <ImageButton
+                                android:id="@+id/kiri"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                app:srcCompat="@drawable/kirii"
+                                android:background="?attr/selectableItemBackgroundBorderless"
+                                android:layout_weight="1"/>
+
+                            <TextView
+                                android:id="@+id/bar_bulan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginRight="50dp"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="@string/april_2026"
+                                android:textColor="@color/text_primary"
+                                android:textSize="16sp" />
+
+                            <ImageButton
+                                android:id="@+id/kanan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                app:srcCompat="@drawable/kanan"
+                                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+                     </LinearLayout>
+
+
+
+              </LinearLayout>
+
+              <LinearLayout
+                  android:id="@+id/blurTotalTahun"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="16dp"
+                  android:background="@drawable/glass_card"
+                  android:elevation="40dp">
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="vertical"
+                         android:padding="16dp">
+
+                            <TextView
+                                android:id="@+id/total_tahun"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/total_tahun_2026"
+                                android:textColor="#FBFBFB"
+                                android:textSize="13sp" />
+
+                            <TextView
+                                android:id="@+id/jumlahpertahun"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:text="Rp 0"
+                                android:textColor="@color/text_primary"
+                                android:textSize="26sp"
+                                android:textStyle="bold" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="@string/total_transaksi"
+                                android:textColor="#FBFBFB"
+                                android:textSize="14sp" />
+
+                                   <TextView
+                                       android:id="@+id/jumlah_transaksi_tahun"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:layout_marginRight="10dp"
+                                       android:fontFamily="@font/poppins_semibold"
+                                       android:text="0"
+                                       android:textColor="@color/text_primary"
+                                       android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                     </LinearLayout>
+
+              </LinearLayout>
+
+       <FrameLayout
+           android:id="@+id/blurTotalBulan"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/glass_card"
+           android:elevation="40dp"
+           android:layout_marginTop="16dp">
+
+              <LinearLayout
+                  android:id="@+id/cardbulan"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:padding="16dp">
+
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="@font/poppins_regular"
+                         android:text="Total Bulan Ini"
+                         android:textColor="@color/text_primary"
+                         android:textSize="14sp" />
+
+                     <TextView
+                         android:id="@+id/nominal_bulan"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:fontFamily="@font/poppins_semibold"
+                         android:text="Rp 0"
+                         android:textColor="@color/text_primary"
+                         android:textSize="26sp"
+                         android:textStyle="bold" />
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:orientation="horizontal"
+                         android:layout_marginTop="8dp">
+
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:fontFamily="@font/poppins_regular"
+
+                         android:text="Progress"
+                         android:textColor="#FBFBFB"
+                         android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/persen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:text="%"
+                                android:textColor="@color/text_primary"
+                                android:fontFamily="@font/poppins_semibold"
+                                android:textSize="12sp" />
+
+                     </LinearLayout>
+
+                     <ProgressBar
+                         android:id="@+id/progressBar"
+                         style="?android:attr/progressBarStyleHorizontal"
+                         android:layout_width="match_parent"
+                         android:layout_height="6dp"
+                         android:progress="10"
+                         android:progressTint="#FFFFFF" />
+
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="41dp"
+                         android:layout_marginTop="10dp"
+                         android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/budget_awal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:layout_weight="1"
+                                android:text="Budget: Rp 0"
+                                android:textColor="#FBFBFB"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:id="@+id/sisa_budget"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:layout_gravity="end"
+                                android:text="Sisa: Rp 0"
+                                android:textColor="#00FFAA"
+                                android:textSize="11sp" />
+
+                     </LinearLayout>
+
+                     <View
+                         android:layout_width="match_parent"
+                         android:layout_height="3dp"
+                         android:layout_marginBottom="10dp"
+                         android:background="#88FFFFFF" />
+
+
+                     <LinearLayout
+
+                         android:layout_width="match_parent"
+                         android:layout_height="16dp"
+                         android:layout_marginTop="10dp"
+                         android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/jumlah_transaksi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:layout_weight="1"
+                                android:text="Jumlah Transaksi: 0"
+                                android:textColor="#FBFBFB"
+                                android:textSize="11sp" />
+
+                            <TextView
+                                android:id="@+id/rata_rata"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_regular"
+                                android:layout_gravity="end"
+                                android:text="@string/rata_rata_rp_0"
+                                android:textColor="#FBFBFB"
+                                android:textSize="11sp" />
+
+                     </LinearLayout>
+
+
+
+              </LinearLayout>
+
+
+       </FrameLayout>
+
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="18dp"
+                  android:layout_marginLeft="0dp"
+                  android:fontFamily="@font/poppins_bold"
+                  android:text="Daftar Pengeluaran"
+                  android:textColor="#BEFFFFFF"
+                  android:textSize="18dp"/>
+
+              <LinearLayout
+                  android:id="@+id/blurEmpty"
+                  android:layout_width="match_parent"
+                  android:layout_height="120dp"
+                  android:layout_marginTop="5dp"
+                  android:background="@drawable/glass_card"
+                  android:elevation="40dp">
+
+              <LinearLayout
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+
+                     <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:fontFamily="@font/poppins_regular"
+                         android:text="@string/belum_ada_pengeluaran_di_bulan_ini"
+                         android:textColor="@color/text_primary"/>
+
+                     <TextView
+                         android:layout_height="wrap_content"
+                         android:layout_width="wrap_content"
+                         android:fontFamily="@font/poppins_regular"
+                         android:text="Tap tombol + untuk menambah"
+                         android:textColor="@color/text_secondary"
+                         android:textSize="12sp"/>
+
+
+              </LinearLayout>
+
+
+       </LinearLayout>
+
+              <androidx.recyclerview.widget.RecyclerView
+                  android:id="@+id/rv_pengeluaran"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="8dp"
+                  android:layout_marginBottom="80dp"
+                  android:visibility="gone"
+                  android:nestedScrollingEnabled="false" />
+
+
+              </LinearLayout>
+
+       </ScrollView>
+
+       <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/fab_tambah"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="bottom|end"
+           android:layout_margin="16dp"
+           android:src="@drawable/add_icon"
+           app:tint="@color/fab_icon"
+           app:backgroundTint="@color/fab_bg"/>
+
+</FrameLayout>

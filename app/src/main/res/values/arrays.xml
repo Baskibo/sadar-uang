@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preloaded_fonts" />
+    <string-array name="pilihan_kategori">
+        <item>Makanan</item>
+        <item>Transportasi</item>
+        <item>Belanja</item>
+        <item>Hiburan</item>
+        <item>Kesehatan</item>
+        <item>Tagihan</item>
+        <item>Investasi</item>
+        <item>Lainnya</item>
+    </string-array>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SadarUang</string>
+    <string name="capybara">Capybara</string>
+    <string name="sadar_uang">Sadar Uang</string>
+    <string name="kelola_uang_dengan_bijak">Kelola uang anda dengan bijak</string>
+    <string name="analytics">Analytics</string>
+    <string name="rata_rata_rp_0">Rata-rata: Rp 0</string>
+    <string name="belum_ada_pengeluaran_di_bulan_ini">Belum ada pengeluaran di bulan ini</string>
+    <string name="export_pdf">Export PDF</string>
+    <string name="april_2026">April 2026</string>
+    <string name="total_tahun_2026">Total Tahun 2026</string>
+    <string name="total_transaksi">Total Transaksi</string>
+    <string name="simpan_pengeluaran">Simpan Pengeluaran</string>
+    <string name="default_web_client_id">380461147868-b5d12ghbsem2pkv76aalcvf6o4f0josh.apps.googleusercontent.com</string>
+</resources>

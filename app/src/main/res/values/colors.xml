@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorPrimaryDark">#0097A7</color>
+    <color name="colorAccent">#009688</color>
+    <color name="colorOverlay">#78ffffff</color>
+    <color name="colorAccentOverlay">#1400bcd4</color>
+    <color name="colorTransparentBlack">#14000000</color>
+    <color name="colorPrimaryTransparent">#6400bcd4</color>
+    <color name="blur_overlay">#33FFFFFF</color>
+    <color name="kaca">#40FFFFFF</color>
+
+    <color name="bg_overlay">#76000000</color>
+
+    <color name="glass_bg">#33FFFFFF</color>
+    <color name="glass_stroke">#55FFFFFF</color>
+
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#DDFFFFFF</color>
+
+    <color name="card_dark">#CF959595</color>
+
+    <color name="fab_color">#A79B9B9B</color>
+
+    <color name="button_glass">#B3CECECE</color>
+    <color name="button_text">#FF1A1A1A</color>
+
+    <color name="fab_bg">#CCFFFFFF</color>
+    <color name="fab_icon">#FF000000</color>
+</resources>

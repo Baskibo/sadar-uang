@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#00BCD4</color>
+
+    <color name="kaca">#22FFFFFF</color>
+
+    <color name="bg_overlay">#B3000000</color>
+
+    <color name="glass_bg">#14FFFFFF</color>
+
+    <color name="glass_stroke">#33FFFFFF</color>
+
+    <color name="text_primary">#FFFFFF</color>
+
+    <color name="text_secondary">#B3FFFFFF</color>
+
+    <color name="card_dark">#D9111111</color>
+
+    <color name="button_glass">#33FFFFFF</color>
+
+    <color name="button_text">#FFFFFFFF</color>
+
+    <color name="fab_bg">#CC1E1E1E</color>
+
+    <color name="fab_icon">#FFFFFFFF</color>
+
+</resources>

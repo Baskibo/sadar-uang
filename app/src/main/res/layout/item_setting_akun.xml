@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_status_akun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Status: Mode Offline"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/glass_card"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:elevation="8dp"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:background="@drawable/glass_card"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp">
+
+            <TextView
+                android:id="@+id/tv_nama"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="Nama User"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="5sp"
+                android:autoSizeMaxTextSize="16sp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="email@gmail.com"
+                android:textColor="#CCCCCC"
+                android:autoSizeTextType="uniform"
+                android:autoSizeMinTextSize="3sp"
+                android:autoSizeMaxTextSize="14sp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login_susulan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login / Ubah Akun"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white"
+        app:backgroundTint="#3B82F6"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="24dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white"
+        app:backgroundTint="#EF4444"
+        app:cornerRadius="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#444444"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manajemen Data (Excel)"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:layout_marginBottom="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_export_excel"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Export Data"
+            android:textColor="#4CAF50"
+            app:strokeColor="#4CAF50"
+            android:layout_marginEnd="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_import_excel"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Import Data"
+            android:textColor="#FF9800"
+            app:strokeColor="#FF9800"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gunakan Export/Import untuk backup atau pindah perangkat saat menggunakan Mode Offline."
+        android:textColor="#AAAAAA"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

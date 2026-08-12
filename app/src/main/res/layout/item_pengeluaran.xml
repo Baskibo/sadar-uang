@@ -1,0 +1,106 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    app:cardElevation="6dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:strokeWidth="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/glass_card">
+
+        <!-- ICON KATEGORI -->
+
+        <!-- KETERANGAN -->
+        <ImageView
+            android:id="@+id/iv_kategori"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_icon"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/kategori" />
+
+        <TextView
+            android:id="@+id/tv_keterangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bensin"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/text_primary"
+            android:layout_toEndOf="@id/iv_kategori"
+            android:layout_marginStart="12dp"/>
+
+        <!-- KATEGORI -->
+        <TextView
+            android:id="@+id/tv_kategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Makanan"
+            android:textSize="12sp"
+            android:textColor="#4DAFFF"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_below="@id/tv_keterangan"
+            android:layout_toEndOf="@id/iv_kategori"
+            android:layout_marginStart="12dp"/>
+
+        <!-- TANGGAL -->
+        <TextView
+            android:id="@+id/tv_tanggal_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25 April"
+            android:textSize="12sp"
+            android:textColor="#F4F4F4"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_toEndOf="@id/tv_kategori"
+            android:layout_alignBaseline="@id/tv_kategori"
+            android:layout_marginStart="8dp"/>
+
+        <!-- NOMINAL -->
+        <TextView
+            android:id="@+id/tv_nominal_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 20.000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/text_primary"
+            android:layout_below="@id/tv_kategori"
+            android:layout_toEndOf="@id/iv_kategori"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"/>
+
+        <!-- ICON FOTO -->
+        <ImageView
+            android:id="@+id/iv_bukti"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/ic_image"
+            />
+
+        <!-- ICON DELETE -->
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="2dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_delete"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
