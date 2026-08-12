@@ -20,7 +20,7 @@ Sadar Uang was developed to provide a simple and organized way for users to reco
 - Receipt image upload
 - Monthly and yearly expense summary
 - Calendar-based expense management
-- PDF export
+- Excel Export
 - Dark mode
 
 ## Tech Stack
