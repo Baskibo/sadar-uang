@@ -427,7 +427,7 @@ Fitur Export/Import dikembangkan untuk membantu pengguna melakukan backup dan me
 
 ---
 
-# 🚀 How to Run
+#  How to Run
 
 ### Requirements
 
