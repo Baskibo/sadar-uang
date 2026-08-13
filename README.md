@@ -1,4 +1,4 @@
-# 💰 Sadar Uang
+#  Sadar Uang
 
 > **Personal Finance Management Android Application**
 
@@ -8,7 +8,7 @@ Aplikasi ini membantu pengguna memantau pengeluaran harian, mengatur budget bula
 
 ---
 
-## 📱 Preview
+##  Preview
 
 <p align="center">
   <img src="assets/screenshots/dashboard.jpg" width="220">
@@ -19,7 +19,7 @@ Aplikasi ini membantu pengguna memantau pengeluaran harian, mengatur budget bula
 
 ---
 
-## 🎯 Project Overview
+##  Project Overview
 
 Mengelola keuangan pribadi sering kali menjadi sulit ketika transaksi dicatat secara manual atau tersebar di berbagai aplikasi.
 
@@ -38,9 +38,9 @@ Dengan demikian, pengguna dapat memperoleh gambaran yang lebih jelas mengenai ke
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🔐 Authentication
+###  Authentication
 
 * Login menggunakan email dan password
 * Login menggunakan Google
@@ -48,7 +48,7 @@ Dengan demikian, pengguna dapat memperoleh gambaran yang lebih jelas mengenai ke
 * Mode Offline tanpa login
 * Password visibility toggle
 
-### 💸 Expense Management
+###  Expense Management
 
 * Menambahkan transaksi pengeluaran
 * Keterangan transaksi
@@ -59,7 +59,7 @@ Dengan demikian, pengguna dapat memperoleh gambaran yang lebih jelas mengenai ke
 * Daftar riwayat pengeluaran
 * Menghapus transaksi
 
-### 📊 Financial Dashboard
+###  Financial Dashboard
 
 Dashboard menampilkan ringkasan kondisi keuangan pengguna secara langsung, termasuk:
 
@@ -70,7 +70,7 @@ Dashboard menampilkan ringkasan kondisi keuangan pengguna secara langsung, terma
 * Persentase penggunaan budget
 * Sisa budget
 
-### 💰 Budget Management
+###  Budget Management
 
 Pengguna dapat menentukan budget bulanan dan memantau penggunaannya.
 
@@ -88,7 +88,7 @@ Fitur budget meliputi:
 * Sisa budget
 * Notifikasi ketika penggunaan budget mencapai 80%
 
-### 📈 Expense Analytics
+###  Expense Analytics
 
 Aplikasi menyediakan visualisasi pengeluaran untuk membantu pengguna memahami pola keuangan.
 
@@ -98,13 +98,13 @@ Analytics meliputi:
 * Grafik tren pengeluaran harian
 * Perbandingan kategori pengeluaran
 
-### 📅 Calendar-Based Management
+###  Calendar-Based Management
 
 * Navigasi berdasarkan bulan
 * Pengelolaan transaksi berdasarkan tanggal
 * Ringkasan pengeluaran per periode
 
-### 📁 Data Management
+###  Data Management
 
 * Excel Export
 * Excel Import
@@ -112,11 +112,11 @@ Analytics meliputi:
 * Pemindahan data antar perangkat
 * Mode Offline
 
-### 🖼️ Receipt Management
+###  Receipt Management
 
 Pengguna dapat menambahkan foto bukti transaksi pada saat mencatat pengeluaran.
 
-### 🎨 Personalization
+###  Personalization
 
 * Light Mode
 * Dark Mode
@@ -126,7 +126,7 @@ Pengguna dapat menambahkan foto bukti transaksi pada saat mencatat pengeluaran.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology          | Usage                                  |
 | ------------------- | -------------------------------------- |
@@ -139,7 +139,7 @@ Pengguna dapat menambahkan foto bukti transaksi pada saat mencatat pengeluaran.
 
 ---
 
-## 🏗️ Application Architecture
+##  Application Architecture
 
 Sadar Uang menggunakan struktur Android yang memisahkan tampilan, pengelolaan data, dan logic aplikasi.
 
@@ -172,7 +172,7 @@ Struktur ini membantu memisahkan tanggung jawab masing-masing bagian sehingga ap
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 sadar-uang/
@@ -216,9 +216,9 @@ sadar-uang/
 
 ---
 
-# 📸 Screenshots
+#  Screenshots
 
-## 🏠 Dashboard
+##  Dashboard
 
 Dashboard memberikan ringkasan kondisi keuangan pengguna dalam satu tampilan.
 
@@ -230,7 +230,7 @@ Informasi yang ditampilkan meliputi total pengeluaran tahunan, total pengeluaran
 
 ---
 
-## 💸 Expense History
+## Expense History
 
 Halaman daftar pengeluaran menampilkan seluruh transaksi yang telah dicatat pengguna.
 
@@ -248,7 +248,7 @@ Setiap transaksi menampilkan:
 
 ---
 
-## ➕ Add Expense
+##  Add Expense
 
 Pengguna dapat menambahkan transaksi baru dengan memasukkan:
 
@@ -264,7 +264,7 @@ Pengguna dapat menambahkan transaksi baru dengan memasukkan:
 
 ---
 
-## 📊 Expense Analytics
+##  Expense Analytics
 
 Halaman analytics membantu pengguna memahami pola pengeluaran melalui visualisasi data.
 
@@ -279,7 +279,7 @@ Tersedia:
 
 ---
 
-## 💰 Budget Management
+##  Budget Management
 
 Pengguna dapat menentukan budget bulanan dan melihat perkembangan penggunaan budget.
 
@@ -289,7 +289,7 @@ Pengguna dapat menentukan budget bulanan dan melihat perkembangan penggunaan bud
 
 ---
 
-## 🔔 Budget Notification
+##  Budget Notification
 
 Aplikasi menyediakan pengingat ketika penggunaan pengeluaran mendekati batas budget.
 
@@ -299,7 +299,7 @@ Aplikasi menyediakan pengingat ketika penggunaan pengeluaran mendekati batas bud
 
 ---
 
-## 🎨 Wallpaper Customization
+##  Wallpaper Customization
 
 Pengguna dapat memilih wallpaper bawaan aplikasi, mengunggah wallpaper sendiri, atau mengembalikan wallpaper ke pengaturan awal.
 
@@ -309,7 +309,7 @@ Pengguna dapat memilih wallpaper bawaan aplikasi, mengunggah wallpaper sendiri, 
 
 ---
 
-## 👤 Account & Data Management
+##  Account & Data Management
 
 Halaman akun menyediakan informasi akun serta fitur manajemen data.
 
@@ -327,7 +327,7 @@ Pengguna dapat:
 
 ---
 
-## 🔐 Login
+##  Login
 
 Sadar Uang menyediakan autentikasi menggunakan email dan password serta opsi login menggunakan Google.
 
@@ -338,11 +338,11 @@ Sadar Uang menyediakan autentikasi menggunakan email dan password serta opsi log
 
 ---
 
-# 👨‍💻 My Contribution
+#  My Contribution
 
 Dalam pengembangan Sadar Uang, saya berkontribusi pada proses perancangan dan pengembangan aplikasi Android, meliputi:
 
-### 🎨 UI/UX Development
+###  UI/UX Development
 
 * Merancang tampilan aplikasi menggunakan pendekatan modern dan minimalis
 * Mengimplementasikan interface menggunakan Jetpack Compose
@@ -350,7 +350,7 @@ Dalam pengembangan Sadar Uang, saya berkontribusi pada proses perancangan dan pe
 * Mengimplementasikan Light Mode dan Dark Mode
 * Membuat sistem custom wallpaper
 
-### 📱 Android Development
+###  Android Development
 
 * Mengembangkan fitur pencatatan transaksi
 * Mengembangkan sistem budget bulanan
@@ -359,7 +359,7 @@ Dalam pengembangan Sadar Uang, saya berkontribusi pada proses perancangan dan pe
 * Mengembangkan halaman analytics
 * Mengimplementasikan upload bukti transaksi
 
-### 🗄️ Data Management
+###  Data Management
 
 * Mengimplementasikan Room Database
 * Mengelola penyimpanan data transaksi secara lokal
@@ -367,7 +367,7 @@ Dalam pengembangan Sadar Uang, saya berkontribusi pada proses perancangan dan pe
 * Mengembangkan fitur Excel Import
 * Menyediakan mekanisme backup dan pemindahan data
 
-### 📊 Financial Analytics
+###  Financial Analytics
 
 * Mengolah data pengeluaran
 * Mengelompokkan transaksi berdasarkan kategori
@@ -376,7 +376,7 @@ Dalam pengembangan Sadar Uang, saya berkontribusi pada proses perancangan dan pe
 * Menghitung progress penggunaan budget
 * Menampilkan data dalam bentuk grafik
 
-### 🔐 Authentication
+###  Authentication
 
 * Mengimplementasikan login menggunakan email dan password
 * Menyediakan Google Sign-In
@@ -384,7 +384,7 @@ Dalam pengembangan Sadar Uang, saya berkontribusi pada proses perancangan dan pe
 
 ---
 
-# 🧠 Key Technical Challenges
+#  Key Technical Challenges
 
 Beberapa bagian yang menjadi tantangan dalam pengembangan aplikasi:
 
@@ -458,7 +458,7 @@ Run ▶
 
 ---
 
-# 📌 Project Status
+#  Project Status
 
 **Status:** Completed / Portfolio Project
 
@@ -474,7 +474,7 @@ Sadar Uang dikembangkan sebagai project Android untuk menerapkan kemampuan dalam
 
 ---
 
-# 🔮 Future Improvements
+#  Future Improvements
 
 Beberapa pengembangan yang dapat dilakukan selanjutnya:
 
@@ -490,7 +490,7 @@ Beberapa pengembangan yang dapat dilakukan selanjutnya:
 
 ---
 
-# 👤 Developer
+#  Developer
 
 **Muhammad Fakhriy Al Farizi**
 
@@ -505,7 +505,7 @@ Interested in:
 
 ---
 
-## ⭐ Why Sadar Uang?
+##  Why Sadar Uang?
 
 Sadar Uang bukan hanya aplikasi pencatat pengeluaran, tetapi merupakan project yang menggabungkan:
 
