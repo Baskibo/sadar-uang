@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- 🖼️ PREVIEW WALLPAPER -->
+    <!-- PREVIEW WALLPAPER -->
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="150dp"
@@ -22,7 +22,7 @@
             android:src="@drawable/default_walpaper"/>
     </com.google.android.material.card.MaterialCardView>
 
-    <!-- 🎨 PILIHAN WALLPAPER DEFAULT -->
+    <!-- PILIHAN WALLPAPER DEFAULT -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
 
     </LinearLayout>
 
-    <!-- 🔘 BUTTON UPLOAD & RESET -->
+    <!-- BUTTON UPLOAD & RESET -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
             android:fontFamily="@font/poppins_semibold"/>
     </LinearLayout>
 
-    <!-- 💡 TIPS -->
+    <!-- TIPS -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -128,7 +128,7 @@
             android:fontFamily="@font/poppins_regular"/>
     </LinearLayout>
 
-    <!-- ✅ BUTTON SELESAI -->
+    <!-- BUTTON SELESAI -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_selesai_wall"
         android:layout_width="match_parent"
