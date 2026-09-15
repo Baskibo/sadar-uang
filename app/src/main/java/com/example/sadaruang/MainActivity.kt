@@ -220,7 +220,7 @@ class MainActivity : AppCompatActivity() {
 
             if (uri != null) {
 
-                // 🔥 WAJIB: simpan izin permanen
+                // simpan izin permanen
                 contentResolver.takePersistableUriPermission(
                     uri,
                     Intent.FLAG_GRANT_READ_URI_PERMISSION
@@ -567,7 +567,7 @@ class MainActivity : AppCompatActivity() {
         val prefs = getSharedPreferences("user_session", MODE_PRIVATE)
         val email = prefs.getString("userEmail", "offline") ?: "offline"
 
-        firestoreListener?.remove() // 🔥 biar ga double listener
+        firestoreListener?.remove() 
 
         firestoreListener = firestore.collection("pengeluaran")
             .whereEqualTo("userEmail", email)
@@ -635,7 +635,7 @@ class MainActivity : AppCompatActivity() {
             updateUIFromList(list)
         }
 
-// 🔥 OBSERVER TAHUN
+// OBSERVER TAHUN
         database.pengeluaranDao()
             .getByYear(currentYearView, email)
             .observe(this) { listTahun ->
@@ -666,9 +666,8 @@ class MainActivity : AppCompatActivity() {
             .getByMonthYear(currentMonthView, currentYearView, email)
             .observe(this) { list ->
 
-                // =====================
-                // 📊 PIE CHART (Kategori)
-                // =====================
+                
+                // PIE CHART (Kategori)
                 val kategoriMap = mutableMapOf<String, Float>()
 
                 list.forEach {
@@ -712,7 +711,7 @@ class MainActivity : AppCompatActivity() {
                 pieChart.centerText = "Kategori"
                 pieChart.animateY(1000)
 
-                // 📊 BAR CHART (Harian)
+                // BAR CHART (Harian)
                 val dayMap = mutableMapOf<Int, Float>()
 
                 list.forEach {
@@ -1016,7 +1015,7 @@ class MainActivity : AppCompatActivity() {
             editor.apply()
         }
 
-        // 📸 UPLOAD
+        //  UPLOAD
         btnUpload.setOnClickListener {
             isPickingForWallpaper = true
             pickImage.launch(arrayOf("image/*"))
@@ -1090,7 +1089,7 @@ class MainActivity : AppCompatActivity() {
 
             googleSignInClient.signOut().addOnCompleteListener {
 
-                // 🔥 TAMBAHAN PENTING (BIAR MUNCUL PILIH AKUN)
+                //  TAMBAHAN PENTING (BIAR MUNCUL PILIH AKUN)
                 googleSignInClient.revokeAccess().addOnCompleteListener {
 
                     val prefs = getSharedPreferences("user_session", Context.MODE_PRIVATE)
