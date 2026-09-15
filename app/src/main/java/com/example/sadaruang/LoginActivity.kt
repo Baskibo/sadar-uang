@@ -31,7 +31,7 @@ class LoginActivity : AppCompatActivity() {
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestEmail()
-            .requestIdToken(getString(R.string.default_web_client_id)) // 🔥 penting
+            .requestIdToken(getString(R.string.default_web_client_id))
             .build()
 
         googleSignInClient = GoogleSignIn.getClient(this, gso)
@@ -80,7 +80,7 @@ class LoginActivity : AppCompatActivity() {
                         prefs.edit()
                             .putBoolean("isLoggedIn", true)
                             .putBoolean("isOffline", false)
-                            .putString("userEmail", user.email) // 🔥 simpan siapa yang login
+                            .putString("userEmail", user.email) //simpan siapa yang login
                             .apply()
 
                         startActivity(Intent(this@LoginActivity, MainActivity::class.java))
@@ -90,7 +90,7 @@ class LoginActivity : AppCompatActivity() {
                     }
 
                 } else {
-                    // ================= REGISTER =================
+                    
                     // ================= REGISTER =================
                     val existingUser = database.userDao().getUserByEmail(email)
 
@@ -116,7 +116,7 @@ class LoginActivity : AppCompatActivity() {
 
         btnGoogle.setOnClickListener {
 
-            googleSignInClient.signOut() // 🔥 paksa reset dulu
+            googleSignInClient.signOut() // paksa reset dulu
 
             val signInIntent = googleSignInClient.signInIntent
             startActivityForResult(signInIntent, 1001)
