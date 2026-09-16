@@ -9,8 +9,7 @@ class PengeluaranRepository(
 ) {
 
     suspend fun insert(data: Pengeluaran) {
-
-        // 1. simpan ke firestore dulu
+       
         val docRef = firestore.collection("pengeluaran").document()
 
         val newData = data.copy(
@@ -19,7 +18,6 @@ class PengeluaranRepository(
 
         docRef.set(newData).await()
 
-        // 2. simpan ke room (SUDAH ADA firestoreId)
         dao.insert(newData)
     }
 
