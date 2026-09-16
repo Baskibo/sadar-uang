@@ -25,10 +25,8 @@
         // Fungsi untuk menghitung total nominal pengeluaran dalam satu tahun
         @Query("SELECT SUM(nominal) FROM pengeluaran WHERE tahun = :y")
         fun getTotalTahun(y: Int): LiveData<Long?>
-
-        // ---> TARUH DI SINI <---
+        
         // Fungsi untuk mengambil semua list pengeluaran berdasarkan tahun
-
         @Query("SELECT * FROM pengeluaran WHERE tahun = :tahun AND userEmail = :email")
         fun getByYear(tahun: Int, email: String): LiveData<List<Pengeluaran>>
 
